@@ -1,0 +1,604 @@
+<!DOCTYPE html><html lang="en" style="height: 100%;"><head>
+    <link type="text/css" rel="stylesheet" href="file:///Users/jdudzik/Repos/puppeteer-scrapper/styles/styles.css">
+    <script type="text/javascript" src="file:///Users/jdudzik/Repos/puppeteer-scrapper/editor/editor.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page for the N.C. DPH Nutrition Services Branch">
+    <meta name="author" content="">
+
+    <title>DHHS: DPH: Nutrition Services Branch</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap-dph.css" rel="stylesheet">
+
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="assets/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <script id="twitter-wjs" src="assets/widgets.js"></script><script async="" src="assets/analytics.js"></script><script src="assets/jquery-1.11.3.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="assets/jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="assets/jquery.smartmenus.bootstrap.js"></script>
+    <!-- Custom CSS -->
+    <link href="assets/modern-business.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/custom.css" rel="stylesheet">
+    <link href="assets/supplemental.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="assets/navbar.js"></script>
+    <!--Google Analytics Universal Snippet-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-123304638-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        /**
+        * Function that tracks a click on a link in Google Analytics.
+        * This version allows links to have target attribute set and will open links in new windows and record the clicks. (Example use case: This is helpful on hero banners/scrollers with multiple links per banner where a reload of the page would cause the scroller to reset to the first slide.)
+        * The true or false parameter is required if you want to set the target attribute and have the link open in the target (e.g., target="_blank"); if isExternal parameter is not included in onclick event then link will not open in target, it will be treated as !isExternal; false. In such case, the click is still captured as an event, however.
+        * GA will record clicks from the link configurations below.
+        
+        
+        
+        * Example 1: External, New window
+        * <a href="https://www.example.com" onClick="return trackOutboundLink('https://www.example.com',true)" target="_blank">Example</a>
+        actual use case: <a href="https://www.cdc.gov/vaccines/growing/" onClick="return trackOutboundLink('https://www.cdc.gov/vaccines/growing/', true)" target="_blank">
+        * Example 2: External, Same window 
+        * <a href="https://www.example.com" onClick="return trackOutboundLink('https://www.example.com', false)">Example</a>
+        *Example 3: Internal, same window
+        * <a href="/index.htm" onClick="return trackOutboundLink('/index.htm')">Example</a>
+        or
+        <a href="/index.htm" onClick="return trackOutboundLink('/index.htm', false)">Example</a>
+        Example 4: Internal, new window
+        <a href="/index.htm" onClick="return trackOutboundLink('/index.htm', true)" target="_blank">Example</a>
+        * Example 5: Configuration from original GA click-tracking
+        * <a href="http://www.example.com/" onClick="trackOutboundLink('http://worldbreastfeedingweek.org/'); return false;">Example</a>
+        */
+
+        var trackOutboundLink = function (url, isExternal) {
+            var params = {};
+
+            if (!isExternal) {
+                params.hitCallback = function () {
+                    document.location = url;
+                }
+            }
+            ga('send', 'event', 'outbound', 'click', url, params);
+            return isExternal; //true or false, manually set in onclick event params
+        }
+
+
+    </script>
+
+    <style type="text/css">
+        @media all and (min-width:700px) {
+            #myCarousel #flu-update .fill {
+                background-position: left bottom;
+            }
+        }
+
+        @media all and (max-width:699px) {
+            #myCarousel #flu-update .fill {
+                background-position: center top;
+            }
+        }
+    </style>
+    <script src="assets/element.js?cb=googleTranslateElementInit"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="assets/translateelement.css"><script type="text/javascript" charset="UTF-8" src="assets/m=el_main"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <style>
+        /* 06/19/20: hide Google Translate from Edge; not working in Edge; multiple users have reported
+https://support.google.com/translate/thread/47492086?hl=en
+*/
+
+        @supports (-ms-ime-align:auto) {
+            /* Conditional Edge styles */
+            #translate-wrapper {
+                display: none;
+            }
+        }
+
+        #translate-wrapper {
+            background-color: #397aac;
+            width: 100%;
+            height: 50px;
+            padding: 10px 15px;
+        }
+
+            #translate-wrapper .row a:not(#disclaimer-link) {
+                text-decoration: none; /*remove underline from translate menu but not disclaimer link */
+            }
+
+        .goog-te-banner-frame {
+            z-index: 0; /*override high z-index of google iframe that becomes visible after language change and disrupts DOM layout/flow; iframe appears pinned on scroll and covers other elements unless the default z-index is decreased*/
+        }
+
+        .goog-te-gadget {
+            font-family: "TransportNew", Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding-top: 1px;
+        }
+
+        table#county-directory td {
+            border: 2px solid #2e3192;
+        }
+
+        @media all and (max-width:999px) {
+            #translate-wrapper {
+                display: none;
+            }
+
+            .skiptranslate {
+                display: none;
+            }
+
+            #translate-row {
+                display: none;
+            }
+        }
+    </style>
+<script charset="utf-8" src="assets/moment~timeline.126ccbec3f6038135ffb4feab4485043.js"></script><script charset="utf-8" src="assets/timeline.f0018d9150722c67abdd0e6bbab13587.js"></script></head>
+
+<body style="position: relative; min-height: 100%; top: 0px;">
+    <!--[if lt IE 9]>
+<div class="old-browser">
+  <p>Your browser is extremely outdated and cannot properly display our website.</p>
+<p><a href="http://outdatedbrowser.com/" title="Outdated Browser">Update your browser!</a></p>
+</div>
+<![endif]-->
+    <!-- Translate -->
+    <div id="translate-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="float: right;">
+                        <div style="float: left;" id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div>
+                        <div id="disclaimer" style="margin-left: 8px; color: #fff; display: inline-block;"><a href="https://www.ncdhhs.gov/ncdhhs-google-translate-disclaimer" target="_blank" id="disclaimer-link" style="color: #fff;">Disclaimer</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <div class="wrapper">
+            <!--masthead-->
+    <header class="masthead">
+      <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="agency">
+        <a href="https://publichealth.nc.gov"><img src="/library/images/NCDHHS_DPH-395x100.png" alt="N.C. Public Health, Health and Human Services" class="img-responsive"></a>
+        </div>
+      </div>
+    <div class="col-md-4">
+      <!--search-->
+      <div class="nav navbar-nav search">
+        <form method="get" class="zoom_searchform" role="search" action="https://www.ncdhhs.gov/search/cse?keys=" id="search">
+          <div class="input-group">
+            <!--<input name="sort_by" type="hidden" value="0" />-->
+            <input type="text" size="20" maxlength="50" value="" class="form-control zoom_searchbox" placeholder="Search" id="zoom_searchbox" name="keys">
+            <div class="input-group-btn">
+              <button class="btn btn-default zoom_button" type="submit" value="Submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      <!--end search-->
+      </div>
+    <div class="col-md-4" id="global-masthead-links">
+      <div class="pull-right">
+        <ul class="header-links">
+          <li><a href="https://www.ncdhhs.gov/">NC DHHS</a></li>
+          <li><a href="https://www.nc.gov/">NC.GOV</a></li>
+          <li><a href="https://www.nc.gov/agencies">AGENCIES</a></li>
+          <li><a href="https://www.nc.gov/jobs">JOBS</a></li>
+          <li><a href="https://www.nc.gov/services">SERVICES</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+          
+      </div>
+  </header>
+      
+    <!--/masthead-->
+
+<nav id="nav" class="navbar navbar-inverse navbar-static-top" role="navigation">      
+      
+      <div id="hnav" class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse items" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav text-capitalize sm-collapsible" data-smartmenus-id="16343159113883816">
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/about.htm">About</a></li>
+            <li><a href="/breastfeeding/index.htm" class="has-submenu" id="sm-16343159113883816-1" aria-haspopup="true" aria-controls="sm-16343159113883816-2" aria-expanded="false">Breastfeeding Promotion and Support<span class="caret navbar-toggle sub-arrow"></span></a>
+              <ul class="dropdown-menu" id="sm-16343159113883816-2" role="group" aria-hidden="true" aria-labelledby="sm-16343159113883816-1" aria-expanded="false">
+                <li><a href="/breastfeeding/bf-mat-center.htm" class="has-submenu" id="sm-16343159113883816-3" aria-haspopup="true" aria-controls="sm-16343159113883816-4" aria-expanded="false">NC Maternity Center Breastfeeding-Friendly Designation Program<span class="caret navbar-toggle sub-arrow"></span></a>
+                  <ul class="dropdown-menu" id="sm-16343159113883816-4" role="group" aria-hidden="true" aria-labelledby="sm-16343159113883816-3" aria-expanded="false">
+                    <li><a href="/breastfeeding/bf-mat-center-awardees.htm">Maternity Center Breastfeeding-Friendly Designation Awardees</a></li>
+                  </ul>
+                </li>
+                <li><a href="/breastfeeding/bf-childcare.htm" class="has-submenu" id="sm-16343159113883816-5" aria-haspopup="true" aria-controls="sm-16343159113883816-6" aria-expanded="false">NC Breastfeeding-Friendly Child Care Designation Program<span class="caret navbar-toggle sub-arrow"></span></a>
+                  <ul class="dropdown-menu" id="sm-16343159113883816-6" role="group" aria-hidden="true" aria-labelledby="sm-16343159113883816-5" aria-expanded="false">
+                    <li><a href="/breastfeeding/bf-childcare-awardees.htm">Breastfeeding-Friendly Child Care Designation Awardees</a>                </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/snp/index.htm" class="has-submenu" id="sm-16343159113883816-7" aria-haspopup="true" aria-controls="sm-16343159113883816-8" aria-expanded="false">Child and Adult Care Food Program<span class="caret navbar-toggle sub-arrow"></span></a>
+                <ul class="dropdown-menu" id="sm-16343159113883816-8" role="group" aria-hidden="true" aria-labelledby="sm-16343159113883816-7" aria-expanded="false">
+                    <li><a href="/snp/covid.htm">COVID-19  Information</a></li>
+                    <li><a href="/snp/farm.htm">Farm to CACFP</a></li>
+                    <li><a href="/snp/forms.htm">Forms</a></li>
+                    <li><a href="/snp/apply.htm">How to Apply</a></li>
+                    <li><a href="/snp/upgrade-nccares.htm">NC CARES Access and Assistance</a></li>
+                    <li><a href="/snp/meal-patterns.htm">Meal Patterns and Nutrition Resources</a></li>
+                    <li><a href="/snp/policy-memos.htm">Policy Memos</a></li>
+                    <li><a href="/snp/resource.htm">Program Resources</a></li>
+                    <li><a href="/snp/cacfp-spanish.htm">Recursos en Español</a></li>
+                    <li><a href="/snp/cacirap.htm">Review and Appeal Procedures</a></li>
+                    <li><a href="/snp/sfa-aram.htm">School Food Authority ARAM</a></li>
+                    <li><a href="/snp/training.htm">Training</a></li>
+                </ul>
+            </li>
+            <li><a href="/wic/index.htm" class="has-submenu" id="sm-16343159113883816-9" aria-haspopup="true" aria-controls="sm-16343159113883816-10" aria-expanded="false">WIC Program<span class="caret navbar-toggle sub-arrow"></span></a>
+              <ul class="dropdown-menu" id="sm-16343159113883816-10" role="group" aria-hidden="true" aria-labelledby="sm-16343159113883816-9" aria-expanded="false">
+                <li><a href="/wic/conferences.htm">Conferences and Trainings</a></li>
+                <li><a href="/wic/directory.htm">County Directory</a></li>
+				<li><a href="/wic/covid19.htm">COVID-19 Emergency  Response</a></li>
+                <li><a href="/wic/crossroads.htm">Crossroads</a></li>
+                <li><a href="/nutrsurv.htm">Data</a></li>
+                <li><a href="/wic/index.htm">Eligibility</a></li>
+                <li><a href="/ewic/index.htm">eWIC</a></li>
+                <li><a href="/wic/fmarket.htm">Farmers' Market Nutrition Program (FMNP)</a></li>
+                <li><a href="/wic/providers.htm">Health Care Provider Resources</a></li>
+                <li><a href="/wic/index.htm">How to Apply</a></li>
+                <li><a href="/wic/wicLAR.htm" class="has-submenu" id="sm-16343159113883816-11" aria-haspopup="true" aria-controls="sm-16343159113883816-12" aria-expanded="false">Local Agency Resources<span class="caret navbar-toggle sub-arrow"></span></a>
+                  <ul class="dropdown-menu" id="sm-16343159113883816-12" role="group" aria-hidden="true" aria-labelledby="sm-16343159113883816-11" aria-expanded="false">
+                    <li><a href="/wic/disaster-recovery-wic-agencies.htm">Disaster Recovery Resources</a></li>
+                    <li><a href="/wic/outreach-resources.htm">Outreach Resources</a></li>
+                  </ul>
+                </li>
+                <li><a href="/mywic/index.htm" onclick="ga('send', 'event', 'My WIC Internal Link', 'click','click on My WIC from internal NSB navigation link');">My WIC</a></li>
+                <li><a href="/edres/index.htm">Nutrition Education Resources</a></li>
+                <li><a href="/wic/vendor.htm">Vendor's Connection</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/contact.htm" class="lastLink">Contacts</a>
+            </li>
+          </ul>
+          </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+
+        <!-- Page Content -->
+        <div id="content" class="container">
+            <div class="row">
+                <!--Breadcrumb-->
+                <div class="col-md-12 breadcrumb-row">
+                    <a href="https://www.ncdhhs.gov">DHHS</a> <i class="fa fa-angle-double-right"></i><a href="https://publichealth.nc.gov">DPH</a> <i class="fa fa-angle-double-right"></i><a href="/index.htm"><i class="glyphicon glyphicon-home"></i></a><a href="/index.htm">NSB</a>
+                </div>
+                <!--/End Breadcrumb-->
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Nutrition Services Branch</h1>
+                    <div class="alert alert-success" style="padding-top: 0; padding-bottom: 1.5em; color: #000; background-color: #f7fafb; border: 1px solid #1a5f9a; margin-bottom: 1.5em;">
+                        <div class="alert-dismissible pull-right" style="padding-right: 10px; padding-top: 5px;"><a href="#" class="close" data-dismiss="alert" aria-label="close" style="padding: 8px; background-color: #337ab7; border-radius: 4px; font-weight: bold; text-align: center; opacity: 1; color: #fff; padding-top: 0; border: 1px solid #1a5f9a; text-decoration: none; box-shadow: 1px 1px 1px #ccc;">x</a></div>
+                        <h2 style="margin-bottom: 0.25em; padding-bottom: 0; font-weight: bold;">COVID-19 Updates</h2>
+                        <ul>
+                            <li><a href="/wic/covid19.htm" onclick="return trackOutboundLink('/wic/covid19.htm')">WIC Program: COVID-19 Information for Local Agencies and WIC Families</a></li>
+                            <li><a href="/snp/covid.htm" onclick="return trackOutboundLink('/snp/covid.htm')">CACFP: COVID-19 Information for Institutions and Families</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Carousel -->
+            <div class="carousel-wrapper">
+                <header id="myCarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <div class="item active" id="corona">
+                            <div class="fill" style="background-image: url('/library/images/2-coronavirus-slider-brown-yellow-1170x500.jpg'); background-position: center bottom;"></div>
+                            <div class="carousel-caption" style="border: 1px solid white; opacity: 1;">
+                                <h2>Coronavirus Disease 2019 (COVID-19)</h2>
+                                <p>NCDHHS, in coordination with federal, state, and local partners, is responding to the Coronavirus Disease 2019 (COVID-19) outbreak.</p>
+                                <ul>
+                                    <li><a onclick="return trackOutboundLink('https://www.nc.gov/covid19',true);" href="https://www.nc.gov/covid19" target="_blank">COVID-19 Response from across State Government (nc.gov)</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/',true);" target="_blank">NCDHHS: COVID-19 Response in North Carolina</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/dashboard" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/dashboard',true);" target="_blank">Interactive Dashboard (Case Count, Maps)</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/latest-updates" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/latest-updates',true);" target="_blank">Latest Updates</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/guidance" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/guidance',true);" target="_blank">Guidance</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/about-covid-19/symptoms" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/about-covid-19/symptoms', true);" target="_blank">Symptoms</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/about-covid-19/testing" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/about-covid-19/testing', true);" target="_blank">Testing</a>; <a href="https://slph.ncpublichealth.com/bioterrorism/2019-ncov.asp" onclick="return trackOutboundLink('https://slph.ncpublichealth.com/bioterrorism/2019-ncov.asp', true)" target="_blank">NCSLPH COVID-19 Clinical Laboratory Guidelines</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/information/health-care/providers-hospitals-and-labs" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/information/health-care/providers-hospitals-and-labs', true)" target="_blank">Providers, Hospitals, and Labs</a></li>
+                                    <li><a href="https://covid19.ncdhhs.gov/guidance#all-guidance-for-health-care-providers-and-local-health-departments" onclick="return trackOutboundLink('https://covid19.ncdhhs.gov/guidance#all-guidance-for-health-care-providers-and-local-health-departments', true)" target="_blank">Local Health Departments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div class="item">
+                            <div class="fill" style="background-image: url('/library/images/hero-family.png'); background-position: center;"></div>
+                            <div class="carousel-caption" style="border: 1px solid white;">
+                                <p>Code for America&rsquo;s new portal,&nbsp;<a href="https://www.getctc.org/en">GetCTC</a>, will help families access the Child Tax Credit and other tax benefits they might have missed, including stimulus payments. GetCTC makes it easy for families with low or no income to get the flexible cash they deserve. The portal is free, mobile-friendly, and available in English and Spanish.</p>
+                            </div>
+                        </div>-->
+
+                        <!--<div class="item">
+                            <div class="modified" style="background-image: url('/library/images/NBM-Promo-Moving.jpg'); background-position: center;"></div>
+                            <div class="carousel-caption" style="border: 1px solid white;">
+                                <p>August is National Breastfeeding Month. Join the North Carolina WIC Program and the Child and Adult Care Food Program in celebrating breastfeeding. The protection, promotion, and support of breastfeeding improves the health of infants, children, parents, and the community. Learn more about National Breastfeeding Month <a href="http://www.usbreastfeeding.org/p/cm/ld/fid=840">here</a>.</p>
+                            </div>
+                        </div>-->
+                        <!--<div class="item">
+                            <div class="fill" style="background-image: url('/library/images/CVB-2021-NSB-home-slider.jpg');"></div>
+                            <div class="carousel-caption" style="border: 1px solid white;">
+                                <h2>Cash Value Benefit Increase for WIC Participants, June 1 - September 30, 2021!</h2>
+                                <div><a href="https://www.nutritionnc.com/wic/covid19.htm " class="btn btn-default">More Information</a></div>
+                            </div>
+                        </div>-->
+                        <div class="item">
+                            <div class="fill" style="background-image: url('/library/images/3-AsianGirlEatingWatermelon-1900-3.jpg');"></div>
+                            <div class="carousel-caption" style="border: 1px solid white;">
+                                <h2>Child and Adult Care Food Program (CACFP)</h2>
+                                <div><a href="/snp/index.htm" class="btn btn-default">More Information</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill" style="background-image: url('/library/images/1-MomInfantShopGrocery1900.jpg'); background-position: center top;"></div>
+                            <div class="carousel-caption" style="border: 1px solid white;">
+                                <h2>NC eWIC</h2>
+                                <p>The North Carolina WIC Program has moved from a paper-based method of WIC benefit issuance to an electronic benefit transfer system (eWIC).</p>
+                                <div><a href="/ewic/" class="btn btn-default">More Information</a></div>
+                            </div>
+                        </div>
+                        <div class="item" id="Breastfeeding">
+                            <div class="fill" style="background-image: url('/library/images/AsianInfantBreastfeeds-Fotolia.jpg'); background-position:right "></div>
+                            <div class="carousel-caption" style="border: 1px solid white;">
+                                <h2>COVID-19 Vaccines While Pregnant or Breastfeeding</h2>
+                                <p>The CDC recommends the COVID-19 vaccination for all people aged 12 years and older, including people who are pregnant, breastfeeding, trying to get pregnant now, or might become pregnant in the future. Learn more <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/pregnancy.html">here</a></p>
+                            </div>
+
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="fa fa-chevron-circle-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="fa fa-chevron-circle-right"></span>
+                        </a>
+                    </div>
+</header>
+                </div>
+           
+
+            <!--Featured Programs -->
+            <div class="row featured-programs">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Programs and Services
+                    </h1>
+                </div>
+            </div>
+            <!--keep separate row to clear floats and prevent wrapping-->
+            <div class="row equal">
+                <div class="col-md-4">
+                    <div class="panel panel-default panel-home" style="height: auto;">
+                        <div class="panel-body panel-body-home">
+                            <a href="/wic/">
+                                <img src="/library/images/Fotolia_127133216-woman-baby-72-360x264.jpg" alt="WIC Program" width="360" height="264" class="img-responsive center-block"></a>
+                            <div class="panel-body-lower">
+                                <p>The <a href="/wic/index.htm"><strong>WIC Program</strong></a> is the Special Supplemental Nutrition Program for <strong>W</strong>omen, <strong>I</strong>nfants, and <strong>C</strong>hildren funded by the United States Department of Agriculture.</p>
+                                <p><span class="important">NEW!</span> <a href="/wic/covid19.htm" onclick="return trackOutboundLink('/wic/covid19.htm')">COVID-19 <strong>WIC Program</strong> Information for Local Agencies and WIC Families</a><a href="/wic/covid19.htm"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default panel-home" style="height: auto;">
+                        <div class="panel-body panel-body-home">
+                            <a href="/breastfeeding/">
+                                <img src="/library/images/Breastfeeding-Important-NWA.png" style="height: 264px; width: 360px;" alt="Infant and Young Child Feeding in Emergencies" class="img-responsive center-block"></a>
+                            <div class="panel-body-lower">
+                                <p>Learn about breastfeeding promotion and support initiatives to help families receive the information and support they need to meet their infant feeding goals <a href="https://www.nutritionnc.com/breastfeeding/index.htm">here</a>.</p>
+                               <p><span class="important">NEW!</span> <a href="wic/covid19.htm">COVID-19 Resource for <strong>Pregnant and Breastfeeding Parents</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default panel-home" style="height: auto;">
+                        <div class="panel-body panel-body-home">
+                            <a href="/snp/">
+                                <img src="/library/images/6-ChildEatingApple-rect-thumb.jpg" width="360" height="264" alt="Special Nutrition Programs" class="img-responsive center-block"></a>
+                            <div class="panel-body-lower">
+                                <p>The <a href="/snp/index.htm"><strong>Child and Adult Care Food Program (CACFP)</strong></a> ensures that     eligible children and adults who attend qualifying non-residential care facilities receive nutritious meals.</p>
+                                <p><span class="important">NEW!</span> <a href="/snp/covid.htm" onclick="return trackOutboundLink('/snp/covid.htm')">COVID-19 <strong>CACFP</strong> Information for Institutions and Families</a><a href="/wic/covid19.htm"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <!--End Features-->
+
+            <!-- Contacts Section -->
+            <div class="row alt-row" id="whatwedo">
+                <div class="col-lg-12">
+                    <h2 class="page-header">What We Do</h2>
+                </div>
+                <div class="col-md-12">
+                    <p>
+                        The Nutrition Services Branch promotes sound nutrition habits among infants, children and women in their child-bearing years.
+              Branch staff work with county, state and private agencies to improve health status.
+                    </p>
+                    <br>
+                    <p><a href="/about.htm" class="btn btn-default">Learn More About the Branch</a></p>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Contact</h2>
+                </div>
+                <div class="col-lg-12">
+                    <p class="pull-left" style="margin-top: 0.5em; margin-bottom: 1em;"><a href="/contact.htm">Additional Contact Details<span class="glyphicon glyphicon-arrow-right" style="padding-left: 4px;"></span></a></p>
+                </div>
+            </div>
+            <!--keep separate row from heading to clear floats and prevent wrapping-->
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Mailing Address</h3>
+                    <p>
+                        Nutrition Services Branch
+                        <br>
+                        1914 Mail Service Center<br>
+                        Raleigh, NC 27699-1914
+                  <br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Physical Address</h3>
+                    <p>
+                        5601 Six Forks Rd.<br>
+                        Raleigh, NC 27609<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Telephone</h3>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        <abbr title="Phone">Main</abbr>:
+                        <br>
+                        (919) 707-5800
+                    </p>
+                </div>
+            </div>
+            <!--end contact row-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr style="margin-bottom: 2.5em;">
+                    <p class="text-center"><a href="/nondiscrimination.htm">Nondiscrimination Statement / Aviso  de No Discriminación</a></p>
+                    <p class="text-center"><a href="https://www.ncdhhs.gov/about/department-initiatives/ada-grievance-procedure">NCDHHS ADA and Civil Rights Grievance Procedure</a></p>
+                </div>
+            </div>
+            <!--Page Modified Date-->
+            <p class="modified">
+                Last Modified:
+                <!-- #BeginDate format:Am1 -->
+                09-08-2021<!-- #EndDate -->
+            </p>
+            <!--/End Page Modified Date-->
+        </div>
+        <!-- /End content .container -->
+    </div>
+    <!-- /End .wrapper -->
+    <!-- Footer -->
+      <!-- Footer -->
+        <footer>
+        <div class="social-media-wrapper">
+        <div class="row social-media">
+        <div class="col-md-4">
+<h3>Contact Information</h3>
+<p>NC Department of Health and Human Services<br>
+  2001 Mail Service Center<br>
+  Raleigh, NC 27699-2001<br>
+  919-855-4800</p>
+  </div>
+        <div class="col-md-4">
+        <h3>Recent Tweets</h3>
+<p><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 600px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="profile:ncdhhs" title="Twitter Timeline"></iframe> </p>
+  <script>
+<!--//--><![CDATA[// ><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//--><!]]>
+</script>
+</div>
+<div class="col-md-4">
+<h3>Follow Us</h3>
+<ul><li><a href="https://twitter.com/ncdhhs" title="Follow NC Department of Health and Human Services on Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a> <a href="https://twitter.com/ncdhhs" title="Follow NC Department of Health and Human Services on Twitter"><span>Twitter</span></a>
+  </li>
+  <li><a href="https://www.ncdhhs.gov/rss.xml" title="Follow NC Department of Health and Human Services on RSS"><span class="fa fa-rss" aria-hidden="true"></span></a> <a href="https://www.ncdhhs.gov/rss.xml" title="Follow NC Department of Health and Human Services on RSS"><span>RSS</span></a>
+    </li>
+  <li><a href="https://www.youtube.com/user/ncdhhs/featured" title="Follow NC Department of Health and Human Services on YouTube"><span class="fa fa-youtube-play" aria-hidden="true"></span></a> <a href="https://www.youtube.com/user/ncdhhs/featured" title="Follow NC Department of Health and Human Services on YouTube"><span>YouTube</span></a>
+    </li>
+  <li><a href="https://www.linkedin.com/company/ncdhhs/" title="Follow NC Department of Health and Human Services on LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a> <a href="https://www.linkedin.com/company/ncdhhs/" title="Follow NC Department of Health and Human Services on LinkedIn"><span>LinkedIn</span></a></li>
+</ul>  
+</div></div>
+</div>
+        
+            <div class="row" id="links-logo">
+                <div class="col-lg-12">
+                <ul class="footer-links">
+                <li><a href="https://www.ncdhhs.gov/employee-directory">Employee Directory</a></li>
+                <li><a href="https://www.nc.gov/accessibility">Accessibility</a></li>
+                <li><a href="https://www.nc.gov/terms">Terms of Use</a></li>
+                <li><a href="https://www.nc.gov/privacy">Privacy Policy</a></li>
+                <li><a href="https://www.nc.gov/government/open-budget">NC OpenBook</a></li>
+				</ul>
+                    <p><a href="https://www.ncdhhs.gov"><img src="/library/images/NCDHHS-FOOTER-72-250x80.png" width="250" height="80" alt="State of North Carolina" class="center-block img-responsive"></a></p>
+                </div>
+            </div>
+        </footer>
+        
+
+    <!--/Footer -->
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 8000 //changes the speed
+        })
+    </script>
+
+
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.58065ae230495f5d9e4b6a916472b2c1.html?origin=https%3A%2F%2Fwww.nutritionnc.com" title="Twitter settings iframe" style="display: none;"></iframe><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 0px; height: 0px; display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

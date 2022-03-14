@@ -1,0 +1,1513 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*force scrollbar in IE*/
+html {
+   -ms-overflow-style: scrollbar;
+}
+
+html,body{
+height:100%;	
+}
+
+body{
+	padding-top:0;
+	min-width:240px;
+}
+
+
+/* nav bar font-size down-sized / adjusted for long nav items */
+.navbar-inverse {
+font-size:14px;	
+}
+
+/* affix navbar to viewport top on scroll past masthead height */
+/* applied in navbar.js */
+.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+
+/* this wrapper is placed around all divs except the footer; it could go around the content div rather than all divs; the purpose is to expand content to viewport width and height regardless of the amount of content, which primarily keeps the footer at the bottom of the viewport  */
+.wrapper {
+  width:100%;
+  position:relative;
+  min-height:100%; /* expands content container to viewport size on y-axis even when there is minimal content so that footer remains at bottom of viewport */
+  /*height:100%;*//*NO!NO! if height is included on this wrapper then long content flows underneath/past the footer*/
+}
+
+/*remove indentation of left and right content margins so they align with masthead and footer margins*/
+/*
+#content .row:not(.alt-row) .col-md-12, #content .row:not(.alt-row) .col-lg-12, #content .row .col-md-9, 
+#content .row .col-md-8, #content .row .col-md-4, #content .row .col-md-3{
+padding-left:0;
+padding-right:0;	
+}
+*/
+
+/* remove indentation of left and right content margins */
+#content .row{
+margin-left:-15px;
+margin-right:-15px;	
+}
+
+/*padding on horizontal nav links*/
+.nav > li > a{
+/*padding-left:8px;
+padding-right:8px;*/	
+}
+
+/*indent content nested under expand/collapse menus*/
+div .switchcontent p{
+padding-left:10px;	
+}
+
+.breadcrumb-row{
+margin-top:20px;
+font-size:12px;	
+margin-left:2px;
+}
+
+.page-header{
+margin:30px 0 20px;	
+}
+
+.fa-angle-double-right{
+color:#ccc;
+margin:auto 5px;	
+}
+
+.carousel-wrapper {
+  position:relative;
+  min-height:500px;
+  height:500px;/* height property is necessary for carousel to display; image height had to be explicit value rather than percentage of original, else the browser rendered space for the entire container at the percentage height, even if image set to display at say -- 50% -- of container size; the resulting problem was a large chunk of unintended whitespace below image */
+  margin-top:4px; 
+}
+
+.carousel-wrapper:not(#cacfp) {
+  width:100%;
+}
+
+#cacfp.carousel-wrapper {
+  /*width:65%;*/
+  position:relative;
+  min-height:400px;
+  height:400px;/* height property is necessary for carousel to display; image height had to be explicit value rather than percentage of original, else the browser rendered space for the entire container at the percentage height, even if image set to display at say -- 50% -- of container size; the resulting problem was a large chunk of unintended whitespace below image */
+}
+
+#cacfp header.carousel, #cacfp header.carousel .item, #cacfp header.carousel .active.item, #cacfp header.carousel .carousel-inner
+{
+height:400px;	
+min-height:400px;
+/*border:1px solid blue;*/
+}
+
+#cacfp .carousel-control{
+color:#fff !important;	
+}
+
+@media all and (min-width:992px){
+#about-cacfp{
+margin:3px auto auto auto;
+}
+
+#about-cacfp-content{
+padding:4px;
+max-height:357px;
+overflow-y:scroll;	
+}
+}
+
+@media all and (max-width:991px){
+#about-cacfp{
+margin:2em auto 1em auto;
+}
+
+#about-cacfp-content{
+padding:8px;
+}
+
+}
+
+@media all and (max-width:700px){
+.stop-float{
+float:none !important;	
+}  
+}
+
+
+@media all and (min-width:400px){
+#about-cacfp-content .logo-img-left{
+float:left;
+}
+}
+
+#bf-sub.carousel-wrapper {
+  width:100%;
+  position:relative;
+  min-height:300px;
+  height:350px;/* height property is necessary for carousel to display; image height had to be explicit value rather than percentage of original, else the browser rendered space for the entire container at the percentage height, even if image set to display at say -- 50% -- of container size; the resulting problem was a large chunk of unintended whitespace below image */
+  margin-top:10px;
+  margin-bottom:20px; 
+  background-color:red;
+}
+
+#bf-sub header.carousel .item, #bf-sub header.carousel .active.item, #bf-sub header.carousel .carousel-inner
+{
+height:350px;	
+border:1px solid blue;
+}
+
+/*display feature panels at equal heights for desktops*/
+/* apply .equal to div with .row */
+@media all and (min-width:992px){
+/*display panels at equal heights*/
+.equal{
+display:flex;
+height: 100%;
+flex-wrap: wrap;
+}
+.equal > .col-md-4 {
+display:flex;
+/*flex-basis: 50%;
+width:50%;
+flex-wrap: wrap;
+whitespace:nowrap;*/
+}
+
+/*make sure bootstrap .panel is 100% of column 
+else .panel will shrink and be narrower than column width 
+when limited content/text is present*/
+.equal .panel{
+width:100%;
+}
+}
+
+
+/* bookmark offset fix; otherwise, fixed navbar will hide bookmarked content */
+.anchor { 
+  display: inline-block;
+  position:relative;
+  visibility: hidden;
+  top:-140px;
+}
+
+.carousel-control{
+opacity:1;	
+font-size:30px;
+position:absolute;
+width: auto;
+color:#fff !important;
+}
+
+.right.carousel-control,.left.carousel-control{
+	background-image:none;
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right, .fa-chevron-circle-right
+{
+right:15px;	
+top:50%;
+position:absolute;
+margin-top:-20px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev, .fa-chevron-circle-left{
+left:15px;
+top:50%;
+position:absolute;
+margin-top:-20px;	
+}
+
+header.carousel .fill{
+border-radius:4px;	
+}
+
+header{
+width:100%;	
+}
+
+header .col-md-4{
+padding-left:0;
+padding-right:0;	
+}
+
+/* agency brand div col */
+header .agency{
+float:left;
+/*width:270px;*/
+text-align:left;
+max-width:290px;
+/*position ageny column relative to search column and place higher in stack order so that
+the link on the logo image is not "covered" (i.e., unclickable) by the 2nd column when the page is reduced or on smaller devices
+*/	
+position:relative;
+/*z-index:99999;*/ /*too high in order, overlapped nav bar vertically by 20-30px visible on scroll when navbar pinned */
+}
+
+/* search div col */
+header .search{
+padding-top:8px;
+/*padding-left:10px;
+/*float:left;
+min-width:200px;
+max-width:300px;*/
+}
+
+header .search form{
+/*width:240px;	*/
+}
+
+/* required links div col */
+header .header-links{
+/*float:left;*/
+margin-left:4px;
+margin-right:15px;
+}
+
+header .container{
+padding-right:0;	
+}
+
+
+/* override negative margins in bootstrap.css */
+.row{
+margin-right:0;
+margin-left:0;	
+}
+
+.row a{
+text-decoration:underline;
+color:#2c75b3;
+font-weight:normal;
+}
+
+.row a:hover{
+text-decoration:none;
+color:#1a5f9a;
+}
+
+.expand-all a{
+font-weight:bold;
+font-size:16px;	
+}
+
+h1,h2,h3,h4,h5{
+color:#1a5f9a;	
+margin-top:20px;
+}
+
+h1,h2{
+margin-left:-1px;
+/*
+screenshot in photoshop showed
+visible 1px gap between y-axis and left margin of h2 in IE and Chrome,
+even after zeroing out margin and padding in CSS;
+h3 and h4 were flush;
+included h1 in rule for consistency with h2;
+*/	
+}
+
+h3{
+/*border-bottom:1px solid #1a5f9a;	*/
+overflow:hidden; /* so border doesn't extend behind elements like floated images */
+}
+
+.h3-plain{
+color:#000;
+border-bottom:none;	
+}
+
+h4{
+color:#092940;	
+}
+
+.alt-sub-heading{
+/*border-bottom:1px solid #333;*/
+/*margin-left:2px;*/
+/*background-color:#092940;*/
+color:#000;
+/*padding:6px;*/
+/*border-radius:4px;*/
+}
+
+.panel-heading{
+padding:10px;	
+}
+
+.panel-heading h4{
+color:#fff;
+margin-top:0;	
+margin-bottom:0;	
+}
+
+
+.panel-home{
+max-width:360px;	
+border:1px solid #337ab7;
+}
+
+.panel-sub{
+	border:1px solid #ddd;
+}
+
+.panel-body-home{
+padding:0;	
+}
+
+.panel-body-lower {
+padding:0 15px;
+border-top:1px solid #ddd;
+}
+
+.panel-body ul,ol{
+padding-left:1em;
+margin-left:1em;	
+margin-top:0;
+}
+
+.panel-body-home img{
+margin:0;	
+padding:0;
+border-radius:4px 4px 0 0;
+}
+
+.panel-uniform-height{
+height:300px;	
+margin-bottom:20px;
+}
+
+.featured-programs .panel-default > .panel-heading{
+background-color:#337ab7;
+border:1px solid #1a5f9a;
+color:#fff;	
+}
+
+.featured-programs span[class*="fa"], .vector-image-heading {
+	font-size:170px;
+	padding-left:12px;
+	padding-right:8px;
+	}
+
+
+/* expand/contract heading */
+#accordion .panel-default > .panel-heading{
+background-color:#f7f8f8;
+}
+
+#accordion .panel-default > .panel-heading a{
+color:#1a5f9a;	
+font-weight:normal;
+}
+
+.panel-title a.accordion-toggle{
+cursor:pointer;	
+}
+
+#content.container{
+/*margin-bottom:120px;*/
+padding-bottom:150px;
+}
+
+#sidebar-snp .sidebar-position{
+/*float:right;*/
+margin-top:70px;	
+}
+
+#bf-sidebar.sidebar-position{
+	margin-top:10px;
+}
+
+#bf-sidebar.sidebar-position img{
+padding:10px;	
+}
+
+footer{
+background-color:#072235;
+color:#fff;
+margin-bottom:0;
+margin-right:0;	
+padding:0;
+border-top:2px solid #337ab7;
+padding-bottom:30px;
+/*position:absolute;*/
+/*bottom:0;*/
+position:relative;
+height:auto;
+width:100%;
+/*padding-top:20px;*/
+margin-top:-70px;
+clear:both;
+}
+
+
+header ul.header-links{
+padding-top:15px;
+padding-left:0;
+list-style:none;
+text-transform:uppercase;
+margin-top:0;
+}
+
+header ul.header-links li{
+float:none;	
+display:inline-block;
+list-style:none;
+}
+
+header ul.header-links li a{
+color:#fff;
+font-size:11px;
+margin-left:0;
+margin-right:5px;
+font-weight:normal;	
+text-decoration:underline;
+font-weight:bold;
+}
+
+header ul.header-links li a:hover{
+color:#fff;
+text-decoration:none;
+}
+
+footer ul.footer-links{
+
+padding:0;
+list-style:none;
+text-transform:uppercase;
+margin:1em 0 30px;
+text-align:center;	
+float:none;
+}
+
+footer ul.footer-links li{
+float:none;	
+display:inline-block;
+list-style:none;
+}
+
+footer .row#links-logo{
+	background-color:#072235;
+	padding-top:20px;
+}
+
+footer .row#links-logo a{
+color:#fff;
+font-size:12px;
+margin-right:20px;
+font-weight:normal;	
+}
+
+footer .row#links-logo a:hover{
+color:#fff;
+text-decoration:none;
+}
+
+footer .social-media-wrapper{
+width:100%;
+background-color:#092940;
+/*background-color:red;*/
+padding-top:10px;
+padding-bottom:20px;
+}
+
+footer .row.social-media{
+max-width:1170px;
+margin:0 auto;
+padding-left:15px;
+padding-right:15px;
+background-color:#092940;	
+}
+
+footer .row.social-media a{
+margin-left:0;
+display:inline-block;
+color:#fff;
+font-size:14px;
+font-weight:normal;	
+}
+
+footer .row.social-media h3{
+color:#fff;
+/*font-weight:bold;*/
+border-bottom:2px solid white;
+}
+
+
+footer .row.social-media span.fa-twitter, footer .row.social-media span.fa-rss,
+footer .row.social-media span.fa-youtube-play, footer .row.social-media span.fa-linkedin
+{
+color:white;
+font-size:24px;
+padding:10px;
+border:2px solid white;
+border-radius:50%;
+text-decoration:none;
+}
+
+footer .row.social-media span.fa-twitter:hover, footer .row.social-media span.fa-rss:hover,
+footer .row.social-media span.fa-youtube-play:hover, footer .row.social-media span.fa-linkedin:hover
+{
+box-shadow:0px 0px 0px 3px rgba(255,255,255,0.4);
+transition:all .15s ease-in-out;
+-webkit-transition:all .15s ease-in-out;
+}
+
+footer .row.social-media ul{
+list-style:none;
+padding-left:2px;
+}
+
+footer .row.social-media ul li {
+	display:inline-block;
+	float:left;
+	padding:4px;
+	line-height:130%;
+	width:50%;
+	/*border:1px solid red;*/
+}
+
+/* vertical aligment of text adjacent to social media icons */
+footer .row.social-media a span{
+vertical-align:middle;
+}
+
+.modified{
+text-align:center;
+margin-top:30px;
+margin-bottom:4px;
+padding-bottom:4px;
+font-size:12px;
+text-transform:uppercase;
+}
+
+#search{
+border:none;	
+/*width:94%;*/
+margin:8px auto;
+max-width:400px;
+min-width:170px;
+float:left;	
+}
+
+
+.masthead{
+background-color:#092940;
+padding-top:12px;
+padding-bottom:10px;
+}
+
+.old-browser{
+background-color:#cc0000;
+color:#fff;
+font-weight:bold;
+font-size:18px;
+text-align:center;
+padding:10px;
+border-bottom:2px solid black;	
+margin-bottom:2px;
+}
+
+.old-browser a{
+	color:#fff;
+	text-decoration:underline;
+}
+
+.old-browser a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+
+/*padding to right to prevent vertical scrollbar overlay in IE*/
+
+/*
+#hnav.container{
+padding-right:0;	
+}
+*/
+
+
+
+nav{
+background-image:url("/library/images/bg_poly-accent-blue.jpg");
+background-position:center;
+height:60px;
+background-size:cover;
+}
+
+.navbar-static-top{
+z-index:20;	
+}
+
+.navbar-right{
+height:100%;	
+}
+
+.navbar{
+margin-bottom:0;
+}
+
+.navbar-inverse{
+background-color:#337ab7;	
+}
+
+.navbar-form {
+	margin-right:0;
+	margin-left:0;
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a{
+	padding:5px 40px 5px 15px;
+	color:#fff;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #092940;
+}
+
+
+/* top nav bar agency area font color */
+.navbar-inverse .navbar-brand{
+color:#fff;
+}
+
+/* top nav bar nav items font color */
+
+
+.navbar-inverse .navbar-nav > li > a{
+color:#fff;	
+text-decoration:underline;
+}
+
+/*.navbar-inverse .navbar-nav>li>a{color:#fff}*/
+
+/*top level of navigation*/
+
+/*
+.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover
+{
+	color:#fff;background-color:#092940;text-decoration:none;
+	}
+*/
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #092940;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #fff;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+
+/*colors of top-level nav item on hover after submenus have opened*/
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #092940;
+  text-decoration:none;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover{
+color:#fff;
+text-decoration:none;
+background-color:#092940;
+}
+
+/*first-level caret when navigation is collapsed */
+.sm-collapsible.navbar-nav .caret, .sm-collapsible.navbar-nav ul .caret{
+	border-color:#fff;
+background-color:#337ab7;
+color:white;
+margin-right:10px;
+margin-top:-3px;
+}
+
+/*sub-menu caret top margin when navigation is collapsed*/
+.sm-collapsible.navbar-nav .dropdown-menu .caret, .sm-collapsible.navbar-nav .dropdown-menu ul .caret{
+margin-top:-5px;	
+}
+
+.sm-collapsible.navbar-nav .open > a > .caret{
+		border-color:#fff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > .sm-collapsible.navbar-nav .caret:hover {
+border-color:#000;
+background-color:#fff;
+color:white;
+}
+
+/*remove bottom border from last nav menu item*/
+.navbar-inverse .navbar-nav > li > a.lastLink{
+border-bottom:none;	
+}
+
+/* responsive nav toggle icon */
+.navbar-inverse .navbar-toggle{
+	border-color:#fff;
+	background-color:#337ab7;
+	margin-right:5px;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+		background-color:#337ab7;
+		border-color:#fff;
+}
+
+/* toggle icon row */
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+/*margin-right:2px;	*/
+}
+
+.navbar-collapse{
+padding-left:4px;	
+}
+
+/* carousel */
+/*div header*/ .carousel{
+height:100%;
+min-height:450px;
+background-repeat:no-repeat;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  /*right: 15%;*/
+  /*bottom: 20px;*/
+  /*background-color:#337ab7;*/
+  background-color:rgba(51,122,183,1);
+  /*border:2px solid #2973b3;*/
+  border-radius:4px;
+  z-index: 10;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  /*padding:8px;*/
+  color: #fff;
+  text-align: left;
+  box-shadow:4px 4px 10px #333;
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, .6);*/
+  padding:12px;
+}
+
+#myCarousel #corona .carousel-caption{
+	top:30px;
+	left:60px;
+	position:absolute;
+	box-shadow:4px 4px 10px #333;
+	width:370px;
+	border:2px solid #fff;
+    max-height: 420px;
+    overflow-y: scroll;
+
+}
+
+#myCarousel #corona .carousel-caption ul li{
+font-weight: normal;
+font-size: 14px;
+}
+.carousel-caption.less-opacity{
+	background-color:rgba(253,247,227,0.95);
+}
+
+.carousel-caption h2{
+margin-top:0;
+padding:8px 2px 8px 8px;
+width:100%;
+/*background-color:rgba(66,139,202,0.9);*/
+/*background-color:#337ab7;*/
+font-size:16px;
+font-weight:bold;
+color:#fff;
+}
+
+.carousel-caption p{
+color:#fff;
+font-weight:bold;
+margin:8px;	
+padding-bottom:0;
+margin-bottom:12px;
+font-size:14px
+}
+
+.carousel-caption .btn-default{
+  color: #fff;
+  background-color:transparent;
+  border-color: #fff;
+  text-decoration:underline;
+  font-weight:normal;
+  border-radius:4px;
+}
+
+.panel .btn-default, .alt-row .btn-default{
+  color: #fff;
+  background-color:#337ab7;
+  border-color: #337ab7;
+  text-decoration:underline;
+  font-weight:normal;
+  border-radius:4px;
+}
+
+.carousel-caption .btn-default:hover {
+  /*color: #337ab7;*/
+  /*background-color: #fff;*/
+  /*border-color: #337ab7;*/
+  text-decoration:none;
+  box-shadow:0px 0px 0px 3px rgba(255,255,255,0.4)
+}
+
+.panel .btn-default:hover, .alt-row .btn-default:hover {
+  color: #337ab7;
+  background-color: #fff;
+  border-color: #337ab7;
+  text-decoration:none;
+  box-shadow:0px 0px 0px 3px rgba(51,122,183,0.3)
+}
+
+#whatwedo.alt-row{
+	border:1px solid #337ab7;
+	/*background-color:#f7f8f8;*/
+	background-color:#092940;
+	border-radius:4px;
+	font-weight:bold;
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+	padding-bottom:2em;
+	margin-left:0;
+	margin-right:0;
+	color:#fff;
+}
+
+#whatwedo.alt-row h2{
+color:#fff;	
+}
+
+/* remove whitespace below buttons in captions on carousel */
+.carousel-caption p + .btn{
+margin-bottom:0;
+padding-bottom:0;	
+}
+
+.carousel-caption ul{
+margin-left:1em;
+padding-left:1em;
+}
+.carousel-caption ul li{
+color:#fff;
+margin-right:1em;	
+font-weight:bold;
+}
+
+.carousel-caption a:link{
+color:#fff;
+text-decoration:underline;
+}
+
+.carousel-caption a:visited{
+color:#fff;
+text-decoration:underline;
+}
+
+.carousel-caption a:hover{
+color:#eee;
+text-decoration:none;
+}
+
+.indent{
+margin-left:10px;	
+}
+
+.indent-indent{
+margin-left:20px;	
+}
+
+.img-header-spacing{
+margin-bottom:10px;	
+}
+
+
+.important{
+color:#cc0000;
+font-weight:bold;	
+}
+
+.masthead .agency img{
+	max-height:70px;
+	max-width:290px;
+}
+	
+
+/**********************/
+/*** MEDIA QUERIES ***/
+/*********************/
+
+@media all and (min-width:1280px){
+.container{
+	width:1170px;
+}
+
+}
+
+
+/*submenu background color*/
+@media (min-width: 1000px){
+	/*default*/
+	
+	/*
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+*/
+
+/*adjust left margin*/
+.masthead .agency img{
+	margin-left:-5px;
+}
+
+/* commented out because pulls blue background to navbar 10px to the left on scroll, leaving a 10px white gap
+on right side of layout
+.navbar-inverse{
+margin-left:-10px;	
+}
+*/
+
+/*shift link row 10px to left to soften vertical alignment with masthead and content*/
+#hnav{
+margin-right:auto;
+margin-left:auto;
+left:-10px;
+position:relative;	
+}
+
+
+.caret{
+margin-left:5px;
+}
+
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+/*margin-left:-15px !important;	*/
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a{
+color:#000;
+background-color:#e8f4fe;
+text-decoration:underline;
+}
+
+/*submenu hover */
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover{
+color:#fff;
+text-decoration:none;
+background-color:#337ab7;
+}
+
+/*color fill behind links, visible if there is padding on menus*/
+.dropdown-menu{
+background-color:#e8f4fe;
+}
+
+
+
+/* third level, second sub */
+.dropdown-menu .dropdown-menu{
+background-color:#f5ead5;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu .dropdown-menu > li > a
+{
+background-color:#f5ead5;
+color:#000;
+text-decoration:underline;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu .dropdown-menu > li > a:hover
+{
+background-color:#337ab7;
+color:#fff;
+text-decoration:none;
+}
+
+}
+
+@media all and (min-width:700px){
+.carousel-caption{
+  left: 80px;
+  top:140px;
+  width: 350px;
+  height:auto;	
+  opacity:0.9;
+}
+
+}
+
+@media all and (max-width:999px){
+
+#search{
+max-width:350px;	
+}
+
+footer .row.social-media{
+width:auto;	
+float:none;
+}
+
+header .agency{
+	float:none;
+padding-bottom:5px;	
+padding-left:1px;
+margin-right:20px;
+position:relative;
+/*z-index:99999;*/ /*make sure agency column is above search column when page is reduced; otherwise, link on logo is not clickable*/
+}
+
+header ul.header-links{
+padding-top:5px;
+padding-left:4px;
+list-style:none;
+text-transform:uppercase;
+margin-top:0;
+}
+
+
+#digitalgovsearch{
+border:none;	
+/*width:94%;*/
+/*margin:4px auto 2px 1px;*/
+max-width:300px;
+float:left;
+margin-left:10px;
+}
+
+header .search{
+padding-right:4px;
+padding-left:10px;
+}
+
+header .header-links{
+padding-top:10px;
+padding-left:10px;
+}
+
+#global-masthead-links .pull-right {
+float:none !important;
+}
+
+.resp-no-float{
+float:none !important;	
+}
+
+.masthead .row{
+margin-right:0;
+margin-left:-12px;	
+}
+
+.navbar-brand{
+padding-left:2px;
+padding-right:4px;
+padding-top:20px;	
+}
+
+/*
+.panel-body img{
+width:50%;	
+height:50%;
+}
+*/
+
+/*first level nav items */
+.navbar-inverse .navbar-nav > li > a{
+border-bottom:1px solid #eee;
+background-color:#092940;	
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+text-decoration:none;
+background-color:#337ab7;	
+}
+
+.navbar-nav{
+margin-top:0;
+margin-bottom:0;	
+margin-right:0;
+margin-left:-5px; /*without this the links are off-screen; default setting of -15px is too much*/
+}
+
+.navbar-collapse{
+padding-right:0;	
+}
+
+/*
+.dropdown-menu{
+max-height:400px;
+overflow:hidden;
+overflow-y:auto;	
+}
+*/
+.navbar-nav .open .dropdown-menu{
+background-color:#e8f4fe;	
+padding-top:0;
+padding-bottom:0;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a{
+color:#000;
+background-color:#e8f4fe;
+border-bottom:1px solid #337ab7;
+padding-top:10px;
+text-decoration:underline;
+
+}
+
+/*submenu hover */
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover{
+color:#fff;
+text-decoration:none;
+background-color:#337ab7;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{
+color:#000;	
+}
+
+.dropdown-menu{
+background-color:#e8f4fe;
+}
+
+/* third level, second sub */
+.dropdown-menu .dropdown-menu{
+background-color:#f5ead5;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu .dropdown-menu > li > a
+{
+background-color:#f5ead5;
+color:#000;
+text-decoration:underline;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu .dropdown-menu > li > a:hover
+{
+background-color:#337ab7;
+color:#fff;
+text-decoration:none;
+}
+
+
+.carousel-caption {
+  /*position: absolute;*/
+  /*right: 15%;*/
+  /*bottom: 20px;*/
+  /*bottom:65px;*/
+  /*left:10%;*/
+  /*width:320px;*/
+}
+
+.navbar-inverse .navbar-brand{
+padding-left:6px;
+}
+
+#sidebar-snp .sidebar-position{
+float:none;
+margin-top:1em;
+}
+
+#bf-whatsnew-sidebar .panel-home{
+margin:0.5em auto;	
+}
+
+/*
+#bf-whatsnew-sidebar .panel-body-home img{
+margin:1em auto;
+border-radius:2px;	
+}
+
+#bf-whatsnew-sidebar .panel-body-lower{
+border-top:none;
+}
+*/
+
+.nested-row{
+padding-left:0;
+padding-right:0;
+margin-left:-15px;
+margin-right:-15px;	
+/*border:1px solid red;*/
+}
+	
+}
+
+@media all and (min-width:700px){
+
+/*carousel highlight image*/
+.highlight{
+  background-image:url(/Library/images/Encourage-18w-USDA-LovingCare-72-cropped-web-1150x450.jpg)	
+}
+}
+
+/*orientation and positioning of carousel card/text overlay*/
+@media all and (max-width:699px){
+.carousel-caption {
+  position: absolute;
+  /*right: 15%;*/
+  bottom:45px;
+  left:0;
+  width:100%;
+  height:auto;
+  font-size:1em;
+  border-radius:0;
+  opacity:0.9;
+}
+
+#myCarousel #corona .carousel-caption {
+width:100%;
+  background-color:rgba(51,122,183,1);
+  margin-top:0;
+  border-radius:4px;
+  z-index: 0;
+  color: #fff;
+  text-align: left;
+  padding:8px;
+  max-height:220px;
+  position:absolute;
+top:0;
+left:0;
+margin-bottom:0;
+box-shadow:none;
+border-bottom:1px solid white;
+border-top:1px solid white;
+border-bottom-left-radius:0;
+border-bottom-right-radius:0;
+border-left:none;
+border-right:none;
+overflow-y:scroll;
+max-width: none;
+font-size:14px;
+}
+
+#myCarousel #corona .carousel-caption p{
+display:block;
+font-weight: normal;
+}
+
+#myCarousel #corona .carousel-caption ul li{
+font-weight: normal;
+}
+
+/*carousel highlight image*/
+/*if different sizes are necessary due to image orientation, dimensions and positioning*/
+.highlight{
+  background-image:url(/Library/images/Encourage-18w-USDA-LovingCare-72-cropped-web-710x537.jpg)	
+}
+
+
+.carousel-caption p{
+display:none;	
+}
+
+}
+
+@media all and (max-width:640px){
+
+#search{
+margin-top:0;
+margin-bottom:0;	
+}
+
+}
+
+@media all and (max-width:550px){
+	
+.pull-right{
+float:none !important;
+}
+
+body{
+font-size:15px;	
+}
+
+.pull-right.fa{
+margin-left:0;	
+}
+
+h1{
+font-size:18px;	
+font-weight:bold;
+}
+
+h2{
+font-size:16px;	
+font-weight:bold;
+}
+
+h3{
+font-size:15px;	
+font-weight:bold;
+}
+
+h4{
+font-size:14px;	
+font-weight:bold;
+}
+
+h5{
+font-size:13px;	
+font-weight:bold;
+}
+
+
+#digitalgovsearch{
+margin-left:0;	
+}
+
+
+}
+
+
+@media all and (max-width:400px){
+/*
+body{
+font-size:14px;	
+}
+*/
+
+img{
+float:none;	
+}
+
+.carousel-caption img{
+display:none;	
+}
+
+.alt-row{
+margin-left:5px;
+margin-right:5px;	
+}
+
+.featured-programs .col-md-4{
+padding-left:5px;
+padding-right:5px;	
+}
+
+/* featured panels height*/
+.panel-uniform-height{
+height:320px;	
+margin-bottom:20px;
+}
+
+/* decrease font size of font awesome icons */
+.featured-programs span[class*="fa"], .vector-image-heading {
+	font-size:120px;
+	padding:4px;
+	}
+
+}
+
+@media all and (max-width:350px){
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right, .fa-chevron-circle-right
+{
+right:5px;	
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev, .fa-chevron-circle-left{
+left:5px;
+}
+
+.carousel-caption img{
+display:none;	
+}
+
+.featured-programs .col-md-4{
+padding-left:5px;
+padding-right:5px;	
+}
+
+.btn-default{
+white-space:normal;	
+}
+
+header ul.header-links{
+	list-style:disc;
+	margin-left:6px;
+}
+
+header ul.header-links li{
+	display:block;
+	float:none;
+}
+
+.masthead .agency img{
+max-width:220px;
+height:auto;	
+min-width:200px;
+}
+
+footer p.text-center img{
+width:204px;
+height:46px;	
+min-width:200px;
+}
+
+.navbar-inverse .navbar-brand{
+font-size:14px;
+font-weight:bold;
+}
+
+.navbar-toggle{
+padding:7px 4px;	
+}
+
+footer .row.social-media ul li{
+width:auto;	
+float:none;
+display:block;
+}
+
+footer .row.social-media ul li a{
+font-size:12px;	
+}
+
+footer .social-media.row span.fa-twitter, footer .social-media.row span.fa-rss, footer .social-media.row span.fa-youtube-play, footer .social-media.row span.fa-linkedin{
+font-size:18px;
+padding:7px;
+}
+
+}

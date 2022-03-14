@@ -1,0 +1,583 @@
+.list-clean{
+margin:0 auto 0 0;
+padding-left:0;
+list-style-type:none;	
+}
+
+.applyColorTextBG{
+	background-color:#FFFF99;
+	border:1px solid #ffff00;
+	/*width:90%;*/
+}
+
+.flagFormField{
+border:2px solid #cc0000 !important;
+background-color:#ffcccc !important;	
+}
+
+#submittalForm .error{
+color:#cc0000;
+font-weight:bold;	
+}
+
+#accordion .applyColorTextBG.panel-default > .panel-heading{background-color:transparent;}
+
+/*
+#accordion .applyColorTextBG .panel-default .panel-heading, #accordion .applyColorTextBG .panel-default > .panel-heading, .panel-default > .panel-heading{
+	background-color: transparent;
+}
+*/
+
+/* breastfeeding/maternity-center.htm */
+#bfAwardees div.col-md-2{
+	width:114px;
+	padding-left:0;
+}
+
+/* breastfeeding/childcare-awardees.htm */
+/* snp/farm.htm */
+#bfCCAwardees{
+margin-top:1em;	
+}
+
+#bfCCAwardees h1, #bfCCAwardees h2, #bfCCAwardees h3, #bfCCAwardees h4, #bfCCAwardees h5{
+margin-top:0.5em;	
+}
+
+#bfCCAwardees img{
+margin-top:0;	
+}
+
+#bfCCAwardees div.col-md-2{
+	/*width:140px;*/
+}
+
+header#bf .bx-wrapper{
+margin-top:20px;	
+}
+
+
+header#farm .bx-wrapper{
+margin-top:10px;
+}
+
+header#farm .col-left-logo{
+max-width:220px;
+text-align:left;
+padding-right:4px;	
+float:left;
+}
+
+header#farm .col-right-img{
+	float:left;
+	max-width:750px;
+	padding-left:30px;
+}
+
+.farm-cacfp-img-left {
+    border: 2px solid #339966;
+    border-radius: 4px;
+	margin:1em 1em 0.5em 2px;
+	float:left;
+}
+
+
+.right-sidebar-cos{
+	border:1px solid #337ab7;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	box-shadow: 4px 4px 5px #cac9c9;
+	-moz-box-shadow: 3px 3px 2px #cac9c9;
+	background-color:#fff;
+	vertical-align:top;
+}
+
+.right-sidebar-heading{
+	color:#fff;
+	background-color:#337ab7;
+	margin:0;
+	padding:8px;
+	width:auto;
+	-moz-border-radius:5px;
+	border-radius:5px 5px 0 0;
+}
+
+
+/* decrease default indentation of lists nested within tables with expanding content */
+div.switchcontent div.switchcontent > table ul {
+margin-left:1em;
+padding-left:1em;
+}
+
+div.switchcontent div.switchcontent > table ul li ul{
+	margin-left:0.75em;
+	padding-left:0.75em;
+	}
+
+
+@media all and (min-width:700px){
+
+.right-md-sidebar-pos{
+	float:right;
+	max-width:220px;
+	margin:auto auto 20px 20px;
+}
+
+.logo-img-left{
+	border-radius: 4px;
+	margin:1em 1em 0.5em 2px;
+	float:left;
+	max-width:180px;
+}
+}
+
+
+@media all and (max-width:1200px){
+header#farm .col-right-img{
+max-width:600px;	
+/*border:1px solid blue;*/
+}
+	
+}
+
+
+@media all and (max-width:991px){
+header#farm .col-md-9, header#farm .col-md-3{
+padding:0;	
+}
+	
+header#farm .col-right-img{
+max-width:500px;	
+/*border:1px solid red;*/
+}
+
+header#farm .col-left-logo{
+max-width:220px;	
+}
+
+#wichome .panel{
+max-width:500px;
+margin:1em auto;	
+}
+
+#wichome .panel img{
+margin:4px auto;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-radius:4px;	
+}
+
+}
+
+
+
+@media all and (max-width:800px){
+header#farm .col-right-img{
+max-width:450px;	
+/*border:1px solid yellow;*/
+}
+	
+header#farm .col-left-logo{
+max-width:200px;	
+}
+
+header#farm .col-left-logo p{
+font-size:14px;	
+}
+
+}
+
+
+@media all and (max-width:700px){
+header#farm .col-right-img{
+max-width:370px;	
+/*border:1px solid aqua;*/
+}
+
+header#farm .col-left-logo{
+max-width:190px;	
+}
+
+header#farm .col-left-logo p{
+font-size:14px;	
+}
+
+}
+
+@media all and (max-width:650px){
+	
+	
+div.switchcontent > ul, div.switchcontent div.switchcontent > ul{
+margin-left:0.75em;
+padding-left:0.75em;	
+}
+
+div.switchcontent > ul li ul, div.switchcontent div.switchcontent > ul li ul{
+margin-left:0.75em;
+padding-left:0.75em;	
+}
+
+	
+header#farm .col-right-img{
+max-width:100%;	
+text-align:center;
+padding-left:0;
+/*border:1px solid brown;*/
+}
+
+header#farm .col-left-logo {
+max-width:100%;
+text-align:center;
+float:none;
+}
+
+header#farm .col-left-logo p{
+text-align:center;	
+}
+
+.farm-cacfp-img-left {
+    float:none;
+	max-width:220px;
+}
+
+
+}
+
+.bx-wrapper .bx-controls-direction a{
+z-index:auto;
+}
+
+
+/* /wic/ad.htm */
+.wic-ad-thumbnails img{
+padding:0;
+border:none;
+margin-bottom:10px;	
+}
+
+/* /ewic/index.htm */
+div#ewicVendorsFAQ.switchcontent > div.switchcontent, div#ewicLocalsFAQ.switchcontent > div.switchcontent{
+border:1px solid #092940;	
+margin:0 10px 10px 1em;
+padding:15px;
+background-color:#f8f8f8;
+border-top:8px solid #337ab7;
+border-radius:4px;
+overflow:hidden;
+padding-left:4px;
+padding-bottom:4px;
+}
+
+/* /wic/conferences.htm */
+div#wicconf .switchcontent p{
+padding-left:0;	
+}
+div#wicconf .switchcontent h2{
+margin-top:0;
+padding-top:0;	
+}
+
+div#wicconf .switchcontent{
+/*defined in javascript file*/
+}
+
+div#wicconf .switchcontent > div.switchcontent{
+border:1px solid #808080;	
+margin:0 10px 10px 0;
+background-color:#fff;
+/*margin-left:1em;*/
+padding-left:10px;
+}
+
+div#wicconf .switchcontent > div.switchcontent h2{
+margin-top:0;
+font-size:16px;
+font-weight:bold;
+}
+
+div#wicconf .switchcontent > div.switchcontent p{
+padding-left:0;
+}
+
+.img-heading-left{
+border-radius:4px;
+margin-left:4px;
+margin-bottom:2em;
+box-shadow:4px 4px 3px #ccc;	
+}
+
+
+/* SNP training tables */
+.roundedTable {
+    border: solid #ddd 1px;
+	border-collapse:separate;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 3px 3px #ccc; 
+    -moz-box-shadow: 0 0 3px 3px #ccc; 
+    box-shadow: 2px 2px 3px #ccc;    
+	/*font-size:11px;    */
+	margin:1em 12px 1em 10px;
+	background-color:#fff;
+	line-height:150%; 
+	width:98%;
+	border-spacing:0;
+}
+
+.roundedTable tr.hover:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+
+.roundedTable th{
+	color:#fff;
+	font-size:1em;
+	line-height:125%;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding:10px 8px;
+	text-align: left;
+	vertical-align:top;
+}
+
+.roundedTable caption{
+color:#0F4979;
+font-weight:bold;
+font-size:1.2em;
+padding:3px;
+text-align:left;
+}
+
+.roundedTable p, .roundedTable ul li{
+font-size:100%;	
+}
+
+.roundedTable td{
+	text-align:left;
+}
+
+.roundedTable td {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 4px 6px;
+	vertical-align:top;
+	/*font-size:1em;*/
+}
+
+.roundedTable .roundedTable{
+font-size:0.9em;
+margin:1em auto;
+width:98%;	
+}
+
+.roundedTable .roundedTable caption{
+font-size:1.1em;
+font-style:normal;
+}
+
+.roundedTable .leftCell{
+background-color:#fafafd;
+text-align:left;	
+}
+
+.roundedTable .rightCell{
+text-align:left;
+}
+
+.roundedTable .rightFormCell{
+text-align:left;
+background-color:#fff;
+}
+
+.roundedTable input{
+background-color:#fff;
+padding:2px;	
+}
+
+.roundedTable input[type="submit"] {
+background-color:#1769ae;
+color:#fff;
+padding:3px;	
+font-weight:bold;
+/*font-family:Verdana, Geneva, sans-serif;*/
+}
+
+.roundedTable .rightFormCell textarea {
+background-color:#fff;
+color:#000;
+padding:3px;	
+/*font-family:Verdana, Geneva, sans-serif;*/
+font-size:inherit;
+}
+
+.roundedTable input[type="reset"]{
+background-color:#ccc;
+color:#000;
+padding:3px;
+/*font-family:Verdana, Geneva, sans-serif;	*/
+}
+
+/*** end 2 column ***/
+
+/*** for 3 column  ***/
+.roundedTable td.leftThreeCol{
+background-color:#fafafd;
+text-align:left;
+}
+
+
+.roundedTable td.centerThreeCol, .roundedTable td.rightThreeCol{
+background-color:#fff;
+text-align:center;	
+}
+
+/*** end 3 column ***/
+
+
+
+.roundedTable th {
+    background-color: #1769ae;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1769ae), to(#0b4c82));
+    background-image: -webkit-linear-gradient(top, #1769ae, #0b4c82);
+    background-image:    -moz-linear-gradient(top, #1769ae, #0b4c82);
+    background-image:     -ms-linear-gradient(top, #1769ae, #0b4c82);
+    background-image:      -o-linear-gradient(top, #1769ae, #0b4c82);
+    background-image:         linear-gradient(top, #1769ae, #0b4c82);
+    /*-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; */       
+    border-top: none;
+    /*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+}
+
+.roundedTable td.first {
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e5e5), to(#f4f4f7));
+    background-image: -webkit-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:    -moz-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:     -ms-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:      -o-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:         linear-gradient(top, #e7e5e5, #f4f4f7);
+    /*-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; */       
+	color:#000;
+	font-weight:bold;
+	/*font-size:0.75em;*/
+	text-align:right !important;
+    /*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+}
+
+.roundedTable .firstColRule{
+	background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e5e5), to(#f4f4f7));
+    background-image: -webkit-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:    -moz-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:     -ms-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:      -o-linear-gradient(top, #e7e5e5, #f4f4f7);
+    background-image:         linear-gradient(top, #e7e5e5, #f4f4f7);
+    /*-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; */       
+	color:#000;
+	font-weight:bold;
+	/*font-size:0.75em;*/
+	text-align:right !important;
+    /*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+	width:33%;
+}
+
+
+.roundedTable td.headercell {
+	padding:6px 8px;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#c4dcf8), to(#e6f0fc));
+    background-image: -webkit-linear-gradient(top, #c4dcf8, #edf5fe);
+    background-image:    -moz-linear-gradient(top, #c4dcf8, #edf5fe);
+    background-image:     -ms-linear-gradient(top, #c4dcf8, #edf5fe);
+    background-image:      -o-linear-gradient(top, #c4dcf8, #edf5fe);
+    background-image:         linear-gradient(top, #c4dcf8, #edf5fe);
+    /*-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; */       
+	color:#000;
+	font-weight:bold;
+    /*text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+}
+
+/*
+.roundedTable td:first-child, .roundedTable th:first-child {
+    border-left: none;
+}
+*/
+
+.roundedTable td:first-child, .roundedTable th:first-child {
+    border-left: none;
+}
+
+
+.roundedTable th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.roundedTable th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.roundedTable th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.roundedTable tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.roundedTable tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 6px;
+}
+
+.roundedTable caption{
+color:#0F4979;
+font-weight:bold;
+font-size:1.2em;
+padding:3px;
+text-align:center;
+}
+
+@media all and (max-width:650px){
+
+.roundedTable{
+font-size:11px;
+margin:0;
+}
+
+.roundedTable.hide-col-2 tr th:nth-child(2),.roundedTable.hide-col-2 tr td:nth-child(2){
+display:none;	
+}
+
+.table-responsive{
+overflow:auto;	
+}
+
+ul, ol, ul ul, ol ol{
+margin-left:0.75em;
+padding-left:0.75em;	
+}
+
+}
+
